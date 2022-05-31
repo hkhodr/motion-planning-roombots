@@ -1,0 +1,1692 @@
+               case 11:
+                    RBnb = 1;
+                    nx = 6; ny = 8; nz = 4;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 4, 4, 0 ,0}; //[0] is orientation (4 options) 
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 120, 180, 0 };
+                   
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { false, true };
+                    
+
+                    b = new int[RBnb];
+                    b[0] = 1;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 2, 2, 2 }, { 2, 2, 3 } };
+                    
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 4, 4, 4 }; //[0] is orientation (4 options) 
+                    //output[1] = new int[] { 0, 4, 4, 6 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    
+
+                    fix = new FixedSupport[6] { FixedSupport.REMOVE_LINE, FixedSupport.ON, FixedSupport.OFF, FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 12:
+                    RBnb = 4;
+                    nx = 6; ny = 8; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 4, 4, 0,0 }; //[0] is orientation (4 options) 
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 120, 180, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { false, true };
+
+
+                    b = new int[RBnb];
+                    b[0] = 1;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 2, 2, 2 }, { 2, 2, 3 } };
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 4, 4, 4 }; //[0] is orientation (4 options) 
+                    //output[1] = new int[] { 0, 4, 4, 6 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+
+
+                    fix = new FixedSupport[6] { FixedSupport.REMOVE_LINE, FixedSupport.ON, FixedSupport.OFF, FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 200:
+                    RBnb = 8;
+                    nx = 6; ny = 10; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 0, 2, 4, 0, 0}; 
+                    input[1] = new int[] { 3, 2, 6, 0, 0}; 
+                    input[2] = new int[] { 3, 6, 4, 0, 0}; 
+                    input[3] = new int[] { 0, 6, 6, 0, 0};
+                
+                    input[4] = new int[] { 1, 2, 10, 0, 1 };
+                    input[5] = new int[] { 2, 2, 14, 0, 1 };
+                    input[6] = new int[] { 1, 6, 10, 0, 1 };
+                    input[7] = new int[] { 2, 6, 14, 0, 1 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4]= mot[5]= mot[6]= mot[7]=new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false};
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[3] =new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+
+                    /* gvx[4] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                     gvx[5] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+                     gvx[6] = new int[2, 3] { { 1, 5, 2 }, { 1, 5, 1 } };
+                     gvx[7] = new int[2, 3] { { 1, 5, 0 }, { 1, 4, 2 } };*/
+
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 7, 0 }, { 1, 7, 1 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 7, 0 }, { 3, 7, 1 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+
+                  
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 20005:
+                    RBnb = 8;
+                    nx = 6; ny = 10; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 0, 2, 4, 0, 0 };
+                    input[1] = new int[] { 1, 2, 6, 0, 0 };
+                    input[2] = new int[] { 3, 6, 4, 0, 1 };
+                    input[3] = new int[] { 0, 6, 6, 0, 1 };
+
+                    input[4] = new int[] { 1, 2, 10, 0, 1 };
+                    input[5] = new int[] { 2, 2, 14, 0, 1 };
+                    input[6] = new int[] { 1, 6, 10, 0, 1 };
+                    input[7] = new int[] { 2, 6, 14, 0, 1 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 2, 0 }, { 3, 2, 1 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 7, 0 }, { 1, 7, 1 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 7, 0 }, { 3, 7, 1 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+
+
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 20006:
+                    RBnb = 8;
+                    nx = 6; ny = 10; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 3, 6, 2, 0, 0 };
+                    input[3] = new int[] { 2, 6, 4, 0, 0 };
+
+                    input[4] = new int[] { 1, 2, 10, 0, 1 };
+                    input[5] = new int[] { 2, 2, 14, 0, 1 };
+                    input[6] = new int[] { 1, 6, 10, 0, 1 };
+                    input[7] = new int[] { 2, 6, 14, 0, 1 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 7, 0 }, { 1, 7, 1 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 7, 0 }, { 3, 7, 1 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+
+
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+                case 20007:
+                    RBnb = 8;
+                    nx = 6; ny = 10; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 6, 6, 2, 0, 1 };
+                    input[3] = new int[] { 7, 6, 4, 0, 1 };
+
+                    input[4] = new int[] { 1, 2, 10, 0, 0 };
+                    input[5] = new int[] { 2, 2, 14, 0, 0 };
+                    input[6] = new int[] { 1, 6, 10, 0, 1 };
+                    input[7] = new int[] { 2, 6, 14, 0, 1 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 5, 2 }, { 1, 4, 2 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 7, 0 }, { 3, 7, 1 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+
+
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 20008:
+                    RBnb = 8;
+                    nx = 6; ny = 10; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 6, 6, 2, 0, 1 };
+                    input[3] = new int[] { 7, 6, 4, 0, 1 };
+
+                    input[4] = new int[] { 8, 2, 10, 0, 1 };
+                    input[5] = new int[] { 9, 2, 14, 0, 1 };
+                    input[6] = new int[] { 0, 6, 10, 0, 0 };
+                    input[7] = new int[] { 2, 6, 12, 0, 0 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 5, 2 }, { 1, 4, 2 } };
+
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+
+
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 20009:
+                    RBnb = 11;
+                    nx = 10; ny = 10; nz = 10;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 6, 6, 2, 0, 1 };
+                    input[3] = new int[] { 7, 6, 4, 0, 1 };
+
+                    input[4] = new int[] { 8, 2, 10, 0, 1 };
+                    input[5] = new int[] { 9, 2, 14, 0, 1 };
+                    input[6] = new int[] { 10, 6, 10, 0, 1 };
+                    input[7] = new int[] { 11, 6, 12, 0, 1 };
+
+                    input[8] = new int[] { 1, 10, 10, 0, 0 };
+                    input[9] = new int[] { 1, 10, 6, 0, 0 };
+                    input[10] = new int[] { 1, 10, 0, 0, 1 };
+
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = mot[8] = mot[9] = mot[10] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = acm_input[8] = acm_input[9] = acm_input[10] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = b[8] = b[9] = b[10] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = mm[8] = mm[9] = mm[10] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 5, 2 }, { 1, 4, 2 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+
+                    gvx[8] = new int[2, 3] { {3,3,3 }, {2,3,3 } };
+                    gvx[9] = new int[2, 3] { {3,4,3 }, {3,5,3 } };
+                    //gvx[8] = new int[2, 3] { { 2, 3, 3 }, { 2, 3, 4 } };
+                    //gvx[9] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 4 } };
+                    gvx[10] = new int[2, 3] { {5,0,0 } , { 5,0,1} };
+                   // gvx[10] = new int[2, 3] { { 3, 4, 3 }, { 3, 4, 4 } };
+
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    output[8] = new int[] { 0, 2, 2, 0 };
+                    output[9] = new int[] { 0, 10, 10, 0 };
+                    output[10] = new int[] { 0, 12, 12, 0 };
+
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = acm_output[8] = acm_output[9] = acm_output[10] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = bo[8] = bo[8] = bo[10]= 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.REMOVE_COL, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[] {6,7,8,9};
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 20010:
+                    RBnb = 11;
+                    nx = 10; ny = 10; nz = 10;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 6, 6, 2, 0, 1 };
+                    input[3] = new int[] { 7, 6, 4, 0, 1 };
+
+                    input[4] = new int[] { 8, 2, 10, 0, 1 };
+                    input[5] = new int[] { 9, 2, 14, 0, 1 };
+                    input[6] = new int[] { 10, 6, 10, 0, 1 };
+                    input[7] = new int[] { 11, 6, 12, 0, 1 };
+
+                    input[8] = new int[] { 1, 10, 10, 0, 0 };
+                    input[9] = new int[] { 1, 10, 6, 0, 0 };
+                    input[10] = new int[] { 1, 10, 0, 0, 1 };
+
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = mot[8] = mot[9] = mot[10] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = acm_input[8] = acm_input[9] = acm_input[10] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = b[8] = b[9] = b[10] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = mm[8] = mm[9] = mm[10] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 5, 2 }, { 1, 4, 2 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+
+                    gvx[8] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 4 } };
+                    gvx[9] = new int[2, 3] { { 3, 3, 5 }, { 3, 4, 3 } };
+                    gvx[10] = new int[2, 3] { {5,0,0 }, {5,0,1 } };
+                    //gvx[8] = new int[2, 3] { { 2, 3, 3 }, { 2, 3, 4 } };
+                    //gvx[9] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 4 } };
+                    //gvx[10] = new int[2, 3] { { 3, 5, 3 }, { 3, 5, 4 } };
+                    // gvx[10] = new int[2, 3] { { 3, 4, 3 }, { 3, 4, 4 } };
+
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    output[8] = new int[] { 0, 2, 2, 0 };
+                    output[9] = new int[] { 0, 10, 10, 0 };
+                    output[10] = new int[] { 0, 12, 12, 0 };
+
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = acm_output[8] = acm_output[9] = acm_output[10] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = bo[8] = bo[8] = bo[10] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.REMOVE_COL, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[] { 6, 7, 8, 9 };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+                case 20011:
+                    RBnb = 12;
+                    nx = 10; ny = 10; nz = 10;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 6, 6, 2, 0, 1 };
+                    input[3] = new int[] { 7, 6, 4, 0, 1 };
+
+                    input[4] = new int[] { 8, 2, 10, 0, 1 };
+                    input[5] = new int[] { 9, 2, 14, 0, 1 };
+                    input[6] = new int[] { 10, 6, 10, 0, 1 };
+                    input[7] = new int[] { 11, 6, 12, 0, 1 };
+
+                    input[8] = new int[] { 1, 10, 14, 0, 1 };
+                    input[9] = new int[] { 1, 10, 10, 0, 1 };
+                    input[10] = new int[] { 0, 10, 6, 0, 0 };
+                    input[11] = new int[] { 0, 10, 2, 0, 0 };
+                   
+
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = mot[8] = mot[9] = mot[10] = mot[11] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = acm_input[8] = acm_input[9] = acm_input[10] = acm_input[11] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = b[8] = b[9] = b[10] = b[11]=0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = mm[8] = mm[9] = mm[10]=mm[11]=new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 5, 2 }, { 1, 4, 2 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+
+                    gvx[8] = new int[2, 3] { { 5, 7, 0 }, { 5, 7, 1 } };
+                    gvx[9] = new int[2, 3] { { 5, 5, 0 }, { 5, 5, 1 } };
+                    gvx[10] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 4 } };
+                    gvx[11] = new int[2, 3] { { 3, 3, 5 }, { 3, 4, 3 } };
+                    //gvx[8] = new int[2, 3] { { 2, 3, 3 }, { 2, 3, 4 } };
+                    //gvx[9] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 4 } };
+                    //gvx[10] = new int[2, 3] { { 3, 5, 3 }, { 3, 5, 4 } };
+                    // gvx[10] = new int[2, 3] { { 3, 4, 3 }, { 3, 4, 4 } };
+
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    output[8] = new int[] { 0, 2, 2, 0 };
+                    output[9] = new int[] { 0, 10, 10, 0 };
+                    output[10] = new int[] { 0, 12, 12, 0 };
+                    output[11] = new int[] { 0, 14, 14, 0 };
+
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = acm_output[8] = acm_output[9] = acm_output[10] = acm_output[11] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = bo[8] = bo[8] = bo[10] = bo[11]= 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.REMOVE_COL, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[] { 6, 7, 8, 9 };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 20012:
+                    RBnb = 12;
+                    nx = 10; ny = 10; nz = 10;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 4, 2, 4, 0, 1 };
+                    input[1] = new int[] { 5, 2, 6, 0, 1 };
+                    input[2] = new int[] { 6, 6, 2, 0, 1 };
+                    input[3] = new int[] { 7, 6, 4, 0, 1 };
+
+                    input[4] = new int[] { 8, 2, 10, 0, 1 };
+                    input[5] = new int[] { 9, 2, 14, 0, 1 };
+                    input[6] = new int[] { 10, 6, 10, 0, 1 };
+                    input[7] = new int[] { 11, 6, 12, 0, 1 };
+
+                    input[8] = new int[] { 1, 10, 14, 0, 0 };
+                    input[9] = new int[] { 1, 10, 10, 0, 0 };
+                    input[10] = new int[] { 12, 10, 6, 0, 1 };
+                    input[11] = new int[] { 13, 10, 2, 0, 1 };
+
+
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = mot[8] = mot[9] = mot[10] = mot[11] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = acm_input[8] = acm_input[9] = acm_input[10] = acm_input[11] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = b[8] = b[9] = b[10] = b[11] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = mm[8] = mm[9] = mm[10] = mm[11] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 5, 2 }, { 1, 4, 2 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+
+                    gvx[8] = new int[2, 3] { { 3, 5, 3 }, { 3, 5, 4 } };
+                    gvx[9] = new int[2, 3] { { 3, 5, 5 }, { 3, 4, 5 } };
+                    gvx[10] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 4 } };
+                    gvx[11] = new int[2, 3] { { 3, 3, 5 }, { 3, 4, 3 } };
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    output[8] = new int[] { 0, 2, 2, 0 };
+                    output[9] = new int[] { 0, 10, 10, 0 };
+                    output[10] = new int[] { 0, 12, 12, 0 };
+                    output[11] = new int[] { 0, 14, 14, 0 };
+
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = acm_output[8] = acm_output[9] = acm_output[10] = acm_output[11] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = bo[8] = bo[8] = bo[10] = bo[11] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.REMOVE_COL, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[] { 6, 7, 8, 9 };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 201:
+                    RBnb = 8;
+                    nx = 6; ny = 10; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 0, 2, 2, 0, 1 };
+                    input[1] = new int[] { 3, 2, 6, 0, 1 };
+                    input[2] = new int[] { 3, 6, 2, 0, 1 };
+                    input[3] = new int[] { 0, 6, 6, 0, 1 };
+
+                    input[4] = new int[] { 1, 2, 10, 0, 1 };
+                    input[5] = new int[] { 2, 2, 14, 0, 1 };
+                    input[6] = new int[] { 1, 6, 10, 0, 1 };
+                    input[7] = new int[] { 2, 6, 14, 0, 1 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = mot[4] = mot[5] = mot[6] = mot[7] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = acm_input[4] = acm_input[5] = acm_input[6] = acm_input[7] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0; b[4] = b[5] = b[6] = b[7] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = mm[4] = mm[5] = mm[6] = mm[7] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 3, 2 }, { 2, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 3, 0 }, { 3, 3, 1 } };
+                    gvx[3] = new int[2, 3] { { 3, 3, 2 }, { 3, 4, 2 } };
+
+                    /* gvx[4] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                     gvx[5] = new int[2, 3] { { 3, 5, 2 }, { 2, 5, 2 } };
+                     gvx[6] = new int[2, 3] { { 1, 5, 2 }, { 1, 5, 1 } };
+                     gvx[7] = new int[2, 3] { { 1, 5, 0 }, { 1, 4, 2 } };*/
+
+                    gvx[4] = new int[2, 3] { { 1, 5, 0 }, { 1, 5, 1 } };
+                    gvx[5] = new int[2, 3] { { 1, 7, 0 }, { 1, 7, 1 } };
+                    gvx[6] = new int[2, 3] { { 3, 5, 0 }, { 3, 5, 1 } };
+                    gvx[7] = new int[2, 3] { { 3, 7, 0 }, { 3, 7, 1 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+
+
+                    output[4] = new int[] { 0, 8, 10, 0 };
+                    output[5] = new int[] { 0, 10, 8, 0 };
+                    output[6] = new int[] { 0, 4, 8, 0 };
+                    output[7] = new int[] { 0, 4, 4, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = acm_output[4] = acm_output[5] = acm_output[6] = acm_output[7] = new bool[] { true, false };
+
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = bo[4] = bo[5] = bo[6] = bo[7] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 21:
+                    RBnb = 5;
+                    nx = 6; ny = 8; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 2, 6, 4, 0, 0 };
+                    input[1] = new int[] { 2, 2, 8, 0, 0 };
+                    input[2] = new int[] { 3, 2, 10, 0, 0 };
+                    input[3] = new int[] { 3, 6, 14, 0, 0 };
+                    input[4] = new int[] { 1, 6, 10, 0, 1 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = new int[] { 0, 0, 0 };
+                    mot[4] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = new bool[] { true, false };
+                    acm_input[4] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0;
+                    b[4] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = new bool[] { true, false };
+                    mm[4] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 2, 0 }, { 1, 2, 1 } };
+                    gvx[1] = new int[2, 3] { { 1, 2, 2 }, { 1, 2, 3 } };
+                    gvx[2] = new int[2, 3] { { 1, 3, 0 }, { 1, 3, 1 } };
+                    gvx[3] = new int[2, 3] { { 1, 3, 2 }, { 1, 3, 3 } };
+                    gvx[4] = new int[2, 3] { { 3, 5, 0 }, { 5, 5, 1 } };
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+                    output[4] = new int[] { 0, 10, 10, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = new bool[] { true, false };
+                    acm_output[4] = new bool[] { true, false };
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = 0;
+                    bo[4] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 22:
+                    RBnb = 5;
+                    nx = 6; ny = 8; nz = 5;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 1, 4, 6, 0, 1 };
+                    input[1] = new int[] { 1, 4, 6, 4, 1 };
+                    input[2] = new int[] { 2, 4, 8, 0, 1 };
+                    input[3] = new int[] { 1, 4, 8, 4, 1 };
+                    input[4] = new int[] { 1, 8, 8, 0, 0 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = new int[] { 0, 0, 0 };
+                    mot[4] = new int[] { 0, 0, 0 };
+
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = new bool[] { true, false };
+                    acm_input[4] = new bool[] { true, false };
+
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0;
+                    b[4] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = new bool[] { true, false };
+                    mm[4] = new bool[] { true, false };
+
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 2, 3, 0 }, { 2, 3, 1 } };
+                    gvx[1] = new int[2, 3] { { 2, 3, 2 }, { 2, 3, 3 } };
+                    gvx[2] = new int[2, 3] { { 2, 4, 0 }, { 2, 4, 1 } };
+                    gvx[3] = new int[2, 3] { { 2, 4, 2 }, { 2, 4, 3 } };
+                    gvx[4] = new int[2, 3] { { 3, 3, 4 }, { 3, 4, 4 } };
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 4, 0 };
+                    output[1] = new int[] { 0, 2, 6, 0 };
+                    output[2] = new int[] { 0, 8, 4, 0 };
+                    output[3] = new int[] { 0, 8, 8, 0 };
+                    output[4] = new int[] { 0, 10, 10, 0 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { true, false };
+                    acm_output[1] = new bool[] { true, false };
+                    acm_output[2] = new bool[] { true, false };
+                    acm_output[3] = new bool[] { true, false };
+                    acm_output[4] = new bool[] { true, false };
+
+                    bo = new int[RBnb];
+                    bo[0] = 0;
+                    bo[1] = 0;
+                    bo[2] = 0;
+                    bo[3] = 0;
+                    bo[4] = 0;
+
+
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 4;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 3:
+                    RBnb = 3;
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 0, 2, 2, 0, 0 }; //[0] is orientation (4 options) 
+                    input[1] = new int[] { 0, 2, 6, 0, 0 };
+                    input[2] = new int[] { 0, 6, 2, 0, 0 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 3 }, { 1, 3, 2 } };
+                    gvx[1] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 1, 3 }, { 3, 1, 2 } };
+
+
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 6, 4 }; 
+                    output[2] = new int[] { 0, 6, 2, 4 };
+                    output[1] = new int[] { 0, 6, 6, 4 };
+                    
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { false, true };
+                    acm_output[2] = new bool[] { false, true };
+                    acm_output[1] = new bool[] { false, true };
+                    
+
+                    bo = new int[RBnb];
+                    bo[0] = 1;
+                    bo[1] = 1;
+                    bo[2] = 1;
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 5;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+                    break;
+
+                case 4:
+                    RBnb = 4; 
+                    input = new int[RBnb][];
+                    input[0] = new int[] { 0, 2, 2, 0 }; //[0] is orientation (4 options) 
+                    input[1] = new int[] { 0, 2, 6, 0 };
+                    input[2] = new int[] { 0, 6, 2, 0 };
+                    input[3] = new int[] { 0, 6, 6, 0 };
+
+                    mot = new int[RBnb][];
+                    mot[0] = new int[] { 0, 0, 0 };
+                    mot[1] = new int[] { 0, 0, 0 };
+                    mot[2] = new int[] { 0, 0, 0 };
+                    mot[3] = new int[] { 0, 0, 0 };
+
+                    acm_input = new bool[RBnb][];
+                    acm_input[0] = new bool[] { true, false };
+                    acm_input[1] = new bool[] { true, false };
+                    acm_input[2] = new bool[] { true, false };
+                    acm_input[3] = new bool[] { true, false };
+
+                    b = new int[RBnb];
+                    b[0] = 0;
+                    b[1] = 0;
+                    b[2] = 0;
+                    b[3] = 0;
+
+                    mm = new bool[RBnb][];
+                    mm[0] = new bool[] { true, false };
+                    mm[1] = new bool[] { true, false };
+                    mm[2] = new bool[] { true, false };
+                    mm[3] = new bool[] { true, false };
+
+                    gvx = new int[RBnb][,];
+                    gvx[0] = new int[2, 3] { { 1, 3, 3 }, { 1, 3, 2 } };
+                    gvx[1] = new int[2, 3] { { 3, 3, 3 }, { 3, 3, 2 } };
+                    gvx[2] = new int[2, 3] { { 3, 1, 3 }, { 3, 1, 2 } };
+                    gvx[3] = new int[2, 3] { { 1, 1, 3 }, { 1, 1, 2 } };
+                                                                        
+
+                    output = new int[RBnb][];
+                    output[0] = new int[] { 0, 2, 6, 4 }; //[0] is orientation (4 options) 
+                    output[1] = new int[] { 0, 6, 6, 4 };
+                    output[2] = new int[] { 0, 6, 2, 4 };
+                    output[3] = new int[] { 0, 2, 2, 4 };
+
+                    acm_output = new bool[RBnb][];
+                    acm_output[0] = new bool[] { false, true };
+                    acm_output[1] = new bool[] { false, true };
+                    acm_output[2] = new bool[] { false, true };
+                    acm_output[3] = new bool[] { false, true };
+
+                    bo = new int[RBnb];
+                    bo[0] = 1;
+                    bo[1] = 1;
+                    bo[2] = 1;
+                    bo[3] = 1;
+
+                    fix = new FixedSupport[6] { FixedSupport.ON, FixedSupport.ON, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF, FixedSupport.OFF };
+                    fix_list = new int[6][];
+                    a = 5;
+                    fix_list[0] = new int[2] { a - 1, a };
+                    fix_list[1] = new int[] { };
+                    fix_list[2] = new int[] { };
+                    fix_list[3] = new int[] { };
+                    fix_list[4] = new int[] { };
+                    fix_list[5] = new int[] { };
+
+                    PuzzleToSolve = create_puzzle(RBnb, nx, ny, nz, input, mot, acm_input, b, mm, gvx, output, acm_output, bo, fix, fix_list);
+
+                    break;
+
+                case 7:
+                    bool[,,] inputOccupancyGrid, outputOccupancyGrid;
+                    RoombotStatus RB1, RB2, RB3, RB4, gRB1, gRB2, gRB3, gRB4;
+                    RoombotStatus[] RoombotStatusesGoal;
+                    RoombotStatus[] RoombotStatusesInit;
+
+                    //Init
+                    int[][,] H0, H1, H2, H3, H4;
+                    int[] motors0, motors1, motors2, motors3, motors4;
+                    bool[] acm0, acm1, acm2, acm3, acm4;
+                    int[][] vx0, vx1, vx2, vx3, vx4;
+                    int bas0, bas1, bas2, bas3, bas4;
+                    int ee0, ee1, ee2, ee3, ee4;
+                    int can_mov0, can_mov1, can_mov2, can_mov3, can_mov4;
+                    bool mm0, mm1, mm2, mm3, mm4;
+
+                    //Goal
+                    int[][,] gH0, gH1, gH2, gH3, gH4;
+                    int[] gmotors0, gmotors1, gmotors2, gmotors3, gmotors4;
+                    bool[] gacm0, gacm1, gacm2, gacm3, gacm4;
+                    int[][] gvx0, gvx1, gvx2, gvx3, gvx4;
+                    int gbas0, gbas1, gbas2, gbas3, gbas4;
+                    int gee0, gee1, gee2, gee3, gee4;
+                    int gcan_mov0, gcan_mov1, gcan_mov2, gcan_mov3, gcan_mov4;
+                    bool gmm0, gmm1, gmm2, gmm3, gmm4;
+
+                    RBnb = 2;
+                    nx = 8; ny = 8; nz = 4;
+
+                    floor = new bool[8, 8]
+                    {
+                    { true,true,true,true,true,true ,true,true },
+                    { true,true,true,true,true,true ,true,true },
+                    { true,true,true,true,true,true ,true,true },
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { true,true,true,true,true,true ,true,true },
+                    { true,true,true,true,true,true ,true,true },
+                    { true,true,true,true,true,true ,true,true }};
+
+                    ceiling = new bool[8, 8]
+                    {
+                        { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false}};
+
+                    wall1 = new bool[8, 8]
+                    {
+                        { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false}};
+
+                    wall2 = new bool[8, 8]
+                    {
+                        { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false}};
+
+                    wall3 = new bool[8, 8]
+                    {
+                        { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false}};
+
+                    wall4 = new bool[8, 8]
+                    {
+                        { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                   { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false},
+                    { false,false,false,false,false,false,false,false}};
+
+
+
+                    inputOccupancyGrid = new bool[4, 8, 8] {//lines is x , col is y 
+                    {
+                     { false, false, false , false, false,false,false,false},
+                     { false, false, false , false, false,true,false,false},
+                     { false, false, false , false, false,false,false,false},
+                     { false, false, false , false, false,true,false,false},
+                     { false, false, false , false, false,false,false,false},
+                     { false, false, false , false, false,false,false,false},
+                     { false, false, false , false, false,false,false,false},
+                     { false, false, false , false, false,false,false,false}},
+
+                    {
+
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,true,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,true,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false}},
+
+                    {
+
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false, false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false}} ,
+                    {
+
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false, false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false},
+                     { false, false, false , false,false,false,false,false}} };
+
+                    //Module 0//
+                    H0 = new int[2][,];
+                    H0[0] = new int[4, 4]
+                                {
+                        {1,0,0,10},
+                        {0,1,0,2},
+                        {0,0,1,0},
+                        {0,0,0,1}
+                                };
+
+                    H0[1] = new int[4, 4]
+                                {
+                        {0,1,0,10},
+                        {1,0,0,2},
+                        {0,0,-1,4},
+                        {0,0,0,1}
+                                };
+
+                    motors0 = new int[3] { 0, 0, 0 };
+                    acm0 = new bool[2] { true, false };
+
+                    vx0 = new int[2][];
+                    vx0[0] = new int[7] { 5, 1, 0, -1, -1, -1, -1 };
+                    vx0[1] = new int[7] { 5, 1, 1, -1, -1, -1, -1 };
+
+                    //Module 1
+                    /*H1 = new int[2][,];
+                    H1[0] = new int[4, 4]
+                                        {
+                                {-1,0,0,10},
+                                {0,0,1,3},
+                                {0,1,0,3},
+                                {0,0,0,1}
+                                        };
+
+                    H1[1] = new int[4, 4]
+                                {
+                                {0,-1,0,10},
+                                {1,0,0,4},
+                                {0,0,1,0},
+                                {0,0,0,1}
+                                };
+
+                    motors1 = new int[3] { 120, -90, 0 };
+                    acm1 = new bool[] { false, true };
+
+                    vx1 = new int[2][];
+                    vx1[0] = new int[7] { 5, 2, 1, -1, -1, -1, -1 };
+                    vx1[1] = new int[7] { 5, 2, 0, -1, -1, -1, -1 };*/
+                    H1 = new int[2][,];
+                    H1[0] = new int[4, 4]
+                                        {
+                                {1,0,0,10},
+                                {0,1,0,6},
+                                {0,0,1,0},
+                                {0,0,0,1}
+                                        };
+
+                    H1[1] = new int[4, 4]
+                                {
+                                {0,1,0,10},
+                                {1,0,0,6},
+                                {0,0,-1,4},
+                                {0,0,0,1}
+                                };
+
+                    motors1 = new int[3] { 0, 0, 0 };
+                    acm1 = new bool[] { true, false };
+
+                    vx1 = new int[2][];
+                    vx1[0] = new int[7] { 5, 3, 0, -1, -1, -1, -1 };
+                    vx1[1] = new int[7] { 5, 3, 1, -1, -1, -1, -1 };
+
+
+                    //GOAL
+                    gH1 = new int[2][,];
+                    gH1[0] = new int[4, 4]
+                    {
+                        {0,1,0,2},
+                        {1,0,0,2},
+                        {0,0,1,8},
+                        {0,0,0,1}
+                    };
+
+                    gH1[1] = new int[4, 4]
+                                {
+                        {0,1,0,2},
+                        {-1,0,0,2},
+                        {0,0,1,4},
+                        {0,0,0,1}
+                                };
+
+                    gmotors1 = new int[3] { 120, 90, 120 };
+                    gacm1 = new bool[] { true, false };
+
+                    gvx1 = new int[2][];
+                    gvx1[0] = new int[7] { 2, 1, 0, -1, -1, -1, -1 };
+                    gvx1[1] = new int[7] { 2, 1, 1, -1, -1, -1, -1 };
+
+                    gvx0 = new int[2][];
+                    gvx0[0] = new int[7] { 2, 3, 0, -1, -1, -1, -1 };
+                    gvx0[1] = new int[7] { 2, 3, 1, -1, -1, -1, -1 };
+
+                    outputOccupancyGrid = (bool[,,])inputOccupancyGrid.Clone();
+                    outputOccupancyGrid[gvx1[0][2], gvx1[0][1], gvx1[0][0]] = true;
+                    outputOccupancyGrid[gvx1[1][2], gvx1[1][1], gvx1[1][0]] = true;
+
+                    outputOccupancyGrid[gvx0[0][2], gvx0[0][1], gvx0[0][0]] = true;
+                    outputOccupancyGrid[gvx0[1][2], gvx0[1][1], gvx0[1][0]] = true;
+
+                    outputOccupancyGrid[vx0[0][2], vx0[0][1], vx0[0][0]] = false;
+                    outputOccupancyGrid[vx0[1][2], vx0[1][1], vx0[1][0]] = false;
+
+                    outputOccupancyGrid[vx1[0][2], vx1[0][1], vx1[0][0]] = false;
+                    outputOccupancyGrid[vx1[1][2], vx1[1][1], vx1[1][0]] = false;
+
+                    RB1 = new RoombotStatus(H0, motors0, acm0, vx0, 0, 1, true, false, acm0);
+                    RB2 = new RoombotStatus(H1, motors1, acm1, vx1, 0, 1, true, false, acm1);
+                    //RB2 = new RoombotStatus(H1, motors1, acm1, vx1, 1, 0, true, false, acm1);
+                    //RB3 = new RoombotStatus(H2, motors2, acm2, vx2, 1, 0, true, false, acm2);
+                    RoombotStatusesInit = new RoombotStatus[2] { RB1, RB2 };
+
+                    gRB1 = new RoombotStatus(gH1, gmotors1, gacm1, gvx1, 0, 1, true, false, gacm1);
+                    gRB2 = new RoombotStatus(gH1, gmotors1, gacm1, gvx1, 0, 1, true, false, gacm1);
+                    RoombotStatusesGoal = new RoombotStatus[2] { RB1, gRB2 };
+
+                     initial_config = new ClassNode(nx, ny, nz, RBnb, inputOccupancyGrid/*, floor,ceiling,wall1,wall2,wall3,wall4*/, RoombotStatusesInit);
+                    Console.WriteLine(initial_config._StateInString(initial_config));
+
+                     goal_config = new ClassNode(nx, ny, nz, RBnb, outputOccupancyGrid, /*floor, ceiling, wall1, wall2, wall3, wall4,*/ RoombotStatusesGoal);
+
+                    PuzzleToSolve = new ClassPuzzle(initial_config, goal_config, floor, ceiling, wall1, wall2, wall3, wall4);//Creates Puzzle
+
+                    break;

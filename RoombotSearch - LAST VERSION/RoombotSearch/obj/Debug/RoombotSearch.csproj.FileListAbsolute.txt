@@ -1,0 +1,9 @@
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\bin\Debug\RoombotSearch.exe
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\bin\Debug\RoombotSearch.pdb
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.csproj.CoreCompileInputs.cache
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.exe
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.pdb
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.csprojAssemblyReference.cache
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.Form1.resources
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.Properties.Resources.resources
+C:\Users\w\Desktop\PDM\Software\Repos\RoombotSearch\RoombotSearch\obj\Debug\RoombotSearch.csproj.GenerateResource.cache

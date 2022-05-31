@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoombotSearch", "RoombotSearch\RoombotSearch.csproj", "{ECAD8432-0EB5-4941-90EF-E30D69839BD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECAD8432-0EB5-4941-90EF-E30D69839BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAD8432-0EB5-4941-90EF-E30D69839BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAD8432-0EB5-4941-90EF-E30D69839BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAD8432-0EB5-4941-90EF-E30D69839BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A86A9DF-96AE-4257-8EB8-750EC9F2E8C7}
+	EndGlobalSection
+EndGlobal
